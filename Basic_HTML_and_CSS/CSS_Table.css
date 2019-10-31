@@ -1,0 +1,15 @@
+table {
+	border: 1px solid silver;
+}
+td:hover {
+	background-color: SpringGreen;
+	color: black;
+}
+tr, th {
+	background-color: RebeccaPurple;
+	color: Linen;
+}
+tr, td {
+	background-color: Maroon;
+	color: Gainsboro;
+}
