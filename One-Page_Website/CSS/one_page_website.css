@@ -1,0 +1,27 @@
+body {
+    font-family: "Helvetica", Times, serif;
+    font-size: 2em;
+    color: darkblue;
+}
+
+input[type=text] {
+    width: 75%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    color: blueviolet;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width:50%;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
