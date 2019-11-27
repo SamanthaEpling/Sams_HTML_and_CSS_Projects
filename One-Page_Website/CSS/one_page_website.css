@@ -1,8 +1,138 @@
 body {
     font-family: "Helvetica", Times, serif;
-    font-size: 2em;
+    font-size: 1em;
     color: darkblue;
+    margin: 30px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.row > .column {
+    padding: 0 5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width :33%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 75%;
+    height: 75%;
+    overflow: auto;
+    background-color: plum;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.MWSlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50%;
+    color: linen;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.7s ease;
+    border-radius: 0 2px 2px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.numbertext {
+    color: lightslategrey;
+    font-size: 14px;
+    padding: 10px 15px;
+    position: aboslute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -2px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: darkcyan;
+    padding: 2px 16px;
+    color: linen;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity:1;
+}
+
+.image.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.18);
+}
+
 
 input[type=text] {
     width: 75%;

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Epling Pets</title>
-	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<link rel="stylesheet" href="../One-Page_Website/CSS/one_page_website.css">
 </head
 <body>
@@ -37,18 +37,7 @@
 			<div id="pets">
 				<h2>PETS</h2>
 				<div>
-					<!--PET ONE:MIKE-WINSTON-->
-					<div>
-						<div>
-							<h3>Mike Winston</h3>
-							<iframe src="images/MikeWinston.mp4" width="250" height="175"></iframe>
-							<p>A gelding in his teens, not rideable, but very cuddly!
-							</p>
-						</div>
-					</div>
-					<!--END PET ONE-->
-					
-					<!--PET TWO:ROMANI-->
+					<!--PET ONE:ROMANI-->
 					<div>
 						<div>
 							<h3>Romani</h3>
@@ -57,18 +46,69 @@
 							</p>
 						</div>
 					<div>
-					<!--END PET TWO-->
+					<!--END PET ONE-->
 					
-					<!--PET THREE:LIONEL-->
+					<!--PET TWO:LIONEL-->
 					<div>
 						<div>
 							<h3>Lionel</h3>
-							<img src="images/Lionel.gif" alt="Lionel"
-							<p>A four year old playful pup, great with people, just don't try and pick him up!
+							<img src="images/Lionel.gif" alt="Lionel">
+							<br><p>A four year old playful pup, great with people, just don't try and pick him up!
 							</p>
 						</div>
 					</div>
-					<!--END PET THREE-->
+					<!--END PET TWO-->
+				
+					<!--MIKE-WINSTON MEMORIAL-->
+					<div>
+						<div>
+							<h2><i>In Memoriam</i></h2>
+							<h3>Mike Winston</h3>
+							<iframe src="images/MikeWinston.mp4" width="250" height="175"></iframe>
+							<p><i>~1999 - November 6, 2019</i></p>
+						</div>
+						<h3>Lightbox</h3>
+						<div class="row">
+							<div class="column">
+								<img src="images/Mike_1_small.gif" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+							</div>
+							<div class="column">
+								<img src="images/Mike_2_small.gif" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"> 
+							</div>
+							<div class="column">
+								<img src="images/Mike_3_small.gif" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+							</div>
+						</div>
+						<div id="MWModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+								<div class="MWSlides">
+									<div class="numbertext">1 / 3</div>
+									<img src="images/Mike_1.gif" style="width:100%"">
+								</div>
+								<div class="MWSlides">
+									<div class="numbertext">2 / 3</div>
+									<img src="images/Mike_2.gif" style="width:100%"">
+								</div>
+								<div class="MWSlides">
+									<div class="numbertext">3 / 3</div>
+									<img src="images/Mike_3.gif" style="width:100%"">
+								</div>
+							</div>
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="images/Mike_1.gif" style="width:100%" onclick="currentSlide(1)" alt="Mike in the pasture">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="images/Mike_2.gif" style="width:100%" onclick="currentSlide(2)" alt="Mike eating hay with Windy">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="images/Mike_3.gif" style="width:100%" onclick="currentSlide(3)" alt="Mike getting scratches and loves from Christopher">
+						</div>
+					<!--END MIKE-WINSTON MEMORIAL SECITON-->
+	
 				</div>
 			</div>
 		</section>
@@ -95,6 +135,7 @@
 						</div>
 			</div>
 		</div>
+		<script src="JS/One_page_website.js"></script>
 		<!--END RSVP-->
 		
 		<!--FOOTER-->
