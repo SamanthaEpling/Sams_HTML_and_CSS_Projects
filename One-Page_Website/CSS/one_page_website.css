@@ -38,21 +38,21 @@ body {
     position: fixed;
     z-index: 1;
     padding-top: 100px;
-    padding-bottom: 100px;
-    left: 15%;
+    left: 0;
     top: 0;
-    width: 75%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     overflow: auto;
     background-color: plum;
 }
 
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: plum;
     margin: auto;
     padding: 0;
-    width: 90%;
+    width: 600px;
+    height: 450px;
     max-width: 1200px;
 }
 
@@ -136,7 +136,7 @@ img {
 .caption-container {
     text-align: center;
     background-color: plum;
-    padding: 2px 16px;
+    padding: 30px 30px;
     color: linen;
 }
 
