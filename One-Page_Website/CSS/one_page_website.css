@@ -6,12 +6,18 @@
 }
 
 
-
 body {
     font-family: "Helvetica", Times, serif;
     font-size: 1em;
     color: darkblue;
     margin: 30px;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 * {
@@ -164,6 +170,17 @@ img {
 
 
 input[type=text] {
+    width: 75%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    color: blueviolet;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=tel] {
     width: 75%;
     padding: 10px 20px;
     margin: 15px 0;

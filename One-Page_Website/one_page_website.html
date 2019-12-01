@@ -4,9 +4,12 @@
 	<title>Epling Pets</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<link rel="stylesheet" href="../One-Page_Website/CSS/one_page_website.css">
+
 </head
 <body>
-
+	<script>document.body.className += ' fade-out';</script>
+		
+	
 		<!--NAVIGATION-->
 		<div class="topnav-centered">
 			<div>
@@ -21,10 +24,10 @@
 		
 		<!--HOME-->
 		<div id="home">
-			<h2><center>HOME</center></h2>
+			<h2 style="font-size: 10vw;"><center>HOME</center></h2>
 			<div>
 				<div>
-					<p><center>There are many quality pets to see and interact with at the Epling household.
+					<p style="font-size: 5vw;"><center>There are many quality pets to see and interact with at the Epling household.
 					<br>Reserve your time with one today!</center>
 					</p>
 				</div>
@@ -35,14 +38,14 @@
 		<!--PETS-->
 		<section>
 			<div id="pets">
-				<h2><center>PETS</center></h2>
+				<h2 style="font-size: 10vw;"><center>PETS</center></h2>
 				<div>
 					<!--PET ONE:ROMANI-->
 					<div>
 						<div>
-							<h3><center>Romani</center></h3>
+							<h3 style="font-size: 8vw;"><center>Romani</center></h3>
 							<img class="center" src="images/RomaniChristmas.png" alt="Romani with Christmas hat">
-							<p><center>A energetic gelding in his twenties, best with experienced horse people.</center>
+							<p style="font-size: 5vw;"><center>A energetic gelding in his twenties, best with experienced horse people.</center>
 							</p>
 						</div>
 					<div>
@@ -51,9 +54,9 @@
 					<!--PET TWO:LIONEL-->
 					<div>
 						<div>
-							<h3><center>Lionel</center></h3>
+							<h3 style="font-size: 8vw;"><center>Lionel</center></h3>
 							<img class="center" src="images/Lionel.gif" alt="Lionel">
-							<br><p><center>A four year old playful pup, great with people, just don't try and pick him up!</center>
+							<br><p style="font-size: 5vw;"><center>A four year old playful pup, great with people, just don't try and pick him up!</center>
 							</p>
 						</div>
 					</div>
@@ -62,12 +65,12 @@
 					<!--MIKE-WINSTON MEMORIAL-->
 					<div>
 						<div>
-							<h2><center><i>In Memoriam</i></center></h2>
-							<h3><center>Mike Winston</center></h3>
+							<h2 style="font-size: 8vw;"><center><i>In Memoriam</i></center></h2>
+							<h3 style="font-size: 8vw;"><center>Mike Winston</center></h3>
 							<iframe class="center" src="images/MikeWinston.mp4" width="250" height="175"></iframe>
-							<p><i><center>~1999 - November 6, 2019</center></i></p>
+							<p style="font-size: 5vw;"><i><center>~1999 - November 6, 2019</center></i></p>
 						</div>
-						<h2><center>Lightbox: Mike Winston</center></h2>
+						<h2 style="font-size: 10vw;"><center>Lightbox: Mike Winston</center></h2>
 						<div class="row">
 							<div class="column">
 								<img src="images/Mike_1_small.gif"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -122,18 +125,18 @@
 		<!--RSVP-->
 		<div id="contact">
 			<div>
-				<h2><center>Reservations</center></h2>
+				<h2 style="font-size: 10vw;"><center>Reservations</center></h2>
 				<div>
-					<p>Quality time with quality pets is just a moment away!
+					<p style="font-size: 2.5vw;">Quality time with quality pets is just a moment away!
 					<br>Reserve your time today!
 					</p>
-					<p>Just provide us with some basic contact information and we will schedule you for some quality time.
+					<p style="font-size: 2.5vw;">Just provide us with some basic contact information and we will schedule you for some quality time.
 					</p>
 					<div>
-						<form action="" method="post">
+						<form name="myForm" action="" method="post">
 							<input class="rsvp" type="text" value="First Name">
 							<input class="rsvp" type="text" value="Last Name">
-							<input class="rsvp" type="text" value="Phone Number">
+							<input class="rsvp" name="phone" type="tel" value="Phone Number" onsubmit="return validateForm()">
 							<input class="rsvp" type="text" value="Email">
 						<div>
 							<input type="submit" value="Submit">
@@ -145,8 +148,19 @@
 		
 		<!--FOOTER-->
 		<div>
-			www.eplingmadpets.com &nbsp;|&nbsp; &copy;2019
+			<center>www.eplingmadpets.com &nbsp;|&nbsp; &copy;2019</center>
 		</div>
 		<!--END FOOTER-->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		
+	<script>
+		$(function() {
+			$('body').removeClass('fade-out');
+		});
+	</script>
 </body>
 </html>

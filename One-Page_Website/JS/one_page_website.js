@@ -37,3 +37,11 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   };
+
+  function validateForm() {
+    var X = document.forms["myForm"]["phone"].value;
+    if(X == "") {
+      alert("Phone number field must be filled out like this: 123-456-7890");
+      return false;
+    }
+  }
